@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  #banner {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    background-image: url('https://ik.imagekit.io/tvlk/loc-asset/gNr3hLh55ZCkPJisyxFK-v9MmzxPu57ZRVI+10VZ2S4b1PNW4T++cbA6yK4gzhAhs9o2HLZ9vs7gy3rpcIU+oKi5EygzQLRjTUv7fRblEVA=/images/1530007924847-1920x1282-FIT_AND_TRIM-3c8ec7789768df02aa27ddb72f9924fc.jpeg?_src=imagekit&tr=c-at_max');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  #banner h1 {
+    font-size: 68px;
+    margin-bottom: 20px;
+  }
+  
+  #banner p {
+    font-size: 34px;
+    margin-top: 60px;
+  }
+  
+  nav {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: blue;
+    border-color: blue;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  #content-sidebar-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 40px;
+  }
+  
+  .content {
+    flex: 2;
+    box-sizing: border-box;
+  }
+  
+  .sidebar {
+    flex: 1;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .slide {
+    width: 100%;
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+  
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact-form label {
+    margin: 10px 0 5px;
+  }
+  
+  #contact-form input {
+    padding: 25px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  #contact-form button {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  #contact-form button:hover {
+    background-color: #45a049;
+  }
+  
+  #our-packages h2 {
+    font-family: inherit;
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  .package-slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .package-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .package-item {
+    flex: 0 0 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .package-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .package-item h3 {
+    margin-top: 5px;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #170707;
+  }
+  
+  .package-item p {
+    font-size: 18px;
+    font-family: 'calibri', sans-serif;
+    color: #555;
+  }
+  
+  .slider-arrows button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .slider-arrows .prev {
+    left: 10px;
+  }
+  
+  .slider-arrows .next {
+    right: 10px;
+  }
+  
+  .slider-arrows button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  #travelers-review {
+    padding: 20px 10px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  #travelers-review h2 {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #travelers-review p {
+    font-size: 10px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .review {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    margin: 20px auto;
+  }
+  
+  .reviewer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    padding-right: 10px;
+  }
+  
+  .reviewer-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .reviewer-info {
+    text-align: left;
+  }
+  
+  .reviewer .name {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .reviewer .travel-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .review-text {
+    flex: 2;
+    font-size: 12px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  #travelers-review .review-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .review {
+    flex: 1;
+    max-width: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .reviewer-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+  
+  .reviewer-info {
+    flex-grow: 1;
+  }
+  
+  footer {
+    background-color: #08081f;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  
+  .footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: #4CAF50;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    font-size: 16px;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+  }
+  
+  .social-icon {
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.3s;
+  }
+  
+  .social-icon:hover {
+    color: #4CAF50;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 70%;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .footer-bottom {
+    background-color: #222;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    #content-sidebar-section {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .package-item {
+      width: 100%;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .slider-container {
+      height: 300px;
+    }
+  
+    .review-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .review {
+      max-width: 100%;
+    }
+  
+    #travelers-review h2 {
+      font-size: 32px;
+    }
+  
+    .reviewer-photo {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .review {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    .reviewer-info {
+      padding-right: 10px;
+    }
+  }
+  
